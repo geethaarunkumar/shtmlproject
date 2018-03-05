@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Canvas</title>
+<script type="text/javascript">
+
+function makecanvas()
+{
+//alert('call var');
+var canvas1=document.getElementById("canvas1");
+var ctex1=canvas1.getContext("2d");
+//alert('call var');
+ctex1.font="35pt Arial";
+//alert(ctex1);
+ctex1.fillStyle="Blue";
+ctex1.strokeStyle="Black";
+//alert('call var');
+
+ctex1.fillText("Welcome to js",45,150);
+ctex1.strokeText("Welcome to js",45,150);
+
+var canvas2=document.getElementById("canvas2");
+var ctex2=canvas2.getContext("2d");
+//alert('call var');
+ctex2.font="35pt Arial";
+//alert(ctex1);
+ctex2.fillStyle="Red";
+ctex2.strokeStyle="Black";
+ctex2.linewidth=10;
+//alert('call var');
+
+ctex2.fillRect(45,5,135,135);
+ctex2.strokeRect(45,5,135,135);
+
+ctex2.fillStyle="#6666666";
+ctex2.fillRect(200,0,135,135);
+
+ctex2.fillStyle="#6666666";
+ctex2.fillRect(45,150,135,135);
+
+ctex2.fillStyle="#ffffff";
+ctex2.strokeStyle="#0000000";
+ctex2.linewidth=10;
+
+ctex2.fillRect(200,150,135,135);
+ctex2.strokeRect(200,0,135,135);
+
+
+var canvas3=document.getElementById("canvas3");
+var ctex3=canvas3.getContext("2d");
+
+
+ctex3.strokeStyle="#6666666";
+ctex3.fillStyle="red";
+ctex3.lineWidth=5;
+
+
+ctex3.beginPath();
+ctex3.moveTo(100,100);
+ctex3.lineTo(150,200);
+ctex3.lineTo(200,200);
+ctex3.lineTo(200,290);
+ctex3.lineTo(290,290);
+ctex3.lineTo(290,100);
+ctex3.lineTo(100,100);
+ctex3.stroke();
+ctex3.fill();
+
+
+var canvas4=document.getElementById("canvas4");
+var ctex4=canvas4.getContext("2d");
+
+ctex4.fillStyle="blue";
+
+ctex4.beginPath();
+ctex4.arc(200,30,25,0,Math.PI*2);
+ctex4.fill();
+ctex4.closePath();
+
+ctex4.fillStyle="red";
+
+ctex4.beginPath();
+ctex4.arc(200,100,45,0,Math.PI*2);
+ctex4.fill();
+ctex4.closePath();
+
+ctex4.fillStyle="black";
+
+ctex4.beginPath();
+ctex4.arc(200,220,75,0,Math.PI*2);
+ctex4.fill();
+ctex4.closePath();
+
+
+var canvas5=document.getElementById("canvas5");
+//alert(canvas5);
+var ctex5=canvas5.getContext("2d");
+
+
+ctex5.fillStyle="blue";
+ctex5.fillRect(0,0,canvas5.width,canvas5.height);
+setInterval(function()(
+ctex5.fillStyle="white";
+ctex5.beginPath();
+ctex5.arc(200,220,75,0,Math.PI*2);
+ctex5.fill();),30)
+//ctex4.closePath();
+
+
+}
+</script>
+<style type="text/css">
+body
+{
+background:#999999;
+}
+#canvas1,#canvas2,#canvas3,#canvas4,#canvas5
+{
+margin:10px;
+padding:10px;
+background:#ffffff;
+border:1px solid #0000000;
+}
+</style>
+</head>
+
+<body onload="makecanvas();">
+<canvas  id="canvas1"   width="400" height="300"></canvas>
+<br/>
+<canvas  id="canvas2"   width="400" height="300"></canvas>
+<br/>
+
+<canvas  id="canvas3"   width="400" height="300"></canvas>
+<br/>
+
+<canvas  id="canvas4"   width="400" height="300"></canvas>
+<br/>
+<canvas  id="canvas5"   width="400" height="300"></canvas>
+<br/>
+
+</body>
+</html>

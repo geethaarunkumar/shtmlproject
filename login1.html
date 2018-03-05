@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+<style type="text/css">
+
+.headrow
+{
+width:100%;
+height:45px;
+background-color:blue;
+color:white;
+text-align:right;
+}
+#col11
+{
+margin-top:50px;margin-left:300px; padding:5px;border:1px solid navy; border-radius:10px;
+}
+.login
+{
+font-size:16px;font-weight:bold; text-align:center; margin-top:60px;
+}
+.uname
+{
+text-align:center; font-size:14px;
+}
+.utext
+{
+margin-left:10px;
+}
+.btn1
+{
+margin-left:200px;
+}
+</style>
+<script type="text/javascript">
+function validation()
+{
+
+			var a=document.login.uname.value;
+			var b=document.login.pwd.value;
+			if(a=="" && b=="" )
+			{
+			alert("Pls fill the form");
+			return false;
+			}
+			return true;
+}
+
+
+</script>
+</head>
+
+<body>
+
+<div class="headrow">
+<img src="img/icon1.jpg" />
+<img src="img/icon2.jpg" />
+<img src="img/icon3.jpg" />
+
+</div>
+<div class="container">
+	<div class="row">
+	<div class="col-lg-5" id="col11">
+				<form method="post" action="sample.html" name="login" onsubmit="return validation()">
+				<p  class="login">Login<br/><hr/></p>
+				<p  class="uname">UserName <span style="color:red;">*</span>
+				<span  class="utext"><input type="text" name="uname" value="" /></span></p>
+				<p class="uname">Password <span style="color:red;">*</span>
+				<span  class="utext"><input type="text" name="pwd" value="" /></span></p>
+				<p class="btn1"><input type="button" value="clear" name="button" />
+				<input type="submit" value="submit" name="submit"/></p>
+	</form>
+	</div>
+	</div>
+
+</div>
+
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

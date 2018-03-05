@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login</title>
+<style type="text/css">
+.main-lcontainer
+{
+	background-color:#0066FF;
+	color:#333333;
+	text-align:center;
+	width:98%;
+	height:auto;
+	display:block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	border:20px solid blue;
+	border-radius:30px;
+	padding:5px;
+	margin: 0px;
+	
+}
+.ltitle
+{
+width:50%;
+text-align:center;
+font-size:3em;
+background-color:lightblue;
+border:1px soild navy;
+border-radius:150px;
+padding:5px;
+margin-left:350px;
+}
+.luname 
+{
+font-size:20px;
+text-align:center;
+}
+.linput
+{
+font-size:20px;
+text-align:center;
+}
+.lbtn
+{
+font-size:20px;
+text-align:center;
+
+}
+.lbtn1
+{
+width:50px;
+height:30px; font-weight:bold;
+}
+
+.error
+{
+font-size:13px;
+color:red;
+}
+</style>
+
+<script type="text/javascript">
+
+function validation()
+{
+var nameerr= namecheck();
+var gendererr = gendercheck();
+var mobileerr= mobilecheck();
+var addrerr = addcheck();
+var pwderr= pwdcheck();
+var cpwderr =cpwdcheck();
+		
+		if(nameerr && gendererr && mobileerr && pwderr && cpwd )
+		{
+		document.reg.submit();
+		}
+		else
+		{
+		return true;
+		}
+
+
+}
+
+function namecheck()
+{
+	var letters = /^[A-Za-z]+$/;  
+	var a = document.reg.uname1.value.match(letters);
+	
+		if(a==null || a=="")
+		{
+		  
+		  document.getElementById("uname1").innerHTML="Enter name";  
+		  return false;  
+		}
+		else
+		{
+	  document.getElementById("uname1").innerHTML="";  
+		return true;
+		}
+}
+
+function gendercheck()
+{
+var gender="";
+var len= document.reg.gender.length;
+var =i;
+		
+		for(i=0;i<len;i++)
+		{
+			if(document.reg.gender[i].checked)
+			{
+			gender=document.reg.gender[i].value;
+			break;
+			}
+		}
+		if(gender == "")
+		{
+			document.getElementById("gender1").innerHTML="select male or female";
+		return false;
+		
+		}
+		else
+		{
+		document.getElementById("gender1").innerHTML="";
+		return true;
+		
+		}
+
+}
+
+function mobilecheck()
+{
+d=document.reg.mobile.value;
+		if (isNaN(d))
+		{  
+		  document.getElementById("mobile").innerHTML="Enter Numeric value only";  
+		  return false;  
+		}
+		else
+		{
+		 document.getElementById("mobile").innerHTML="";  
+		  return true;  
+		}
+}
+
+
+function addrcheck()
+{
+var alpha = /^[0-9a-zA-Z]+$/;  
+var addrchk=document.reg.addr.value.match(alpha);
+if(addrchk == NULL){
+
+		  document.getElementById("addr").innerHTML="Enter valid addr";  
+		  return false;  
+		}
+		else
+		{
+		 document.getElementById("addr").innerHTML="";  
+		  return true;  
+		}
+}		
+
+function pwdcheck()
+{
+var pwdchk1=document.reg.pwd.value.length;
+if(pwdchk1 ==0 || pwdchk1 <=6)
+{
+		  document.getElementById("pwd").innerHTML="Enter valid pwd";  
+		  return false;  
+		}
+		else
+		{
+		 document.getElementById("pwd").innerHTML="";  
+		  return true;  
+		}
+
+}
+
+function cpwdcheck()
+{
+var cpwdchk1=document.reg.cpwd.value.length;
+if(cpwdchk1 ==0 || cpwdchk1 <=6)
+{
+		  document.getElementById("cpwd").innerHTML="Enter valid pwd";  
+		  return false;  
+		}
+		else
+		{
+		 document.getElementById("cpwd").innerHTML="";  
+		  return true;  
+		}
+
+}
+
+
+
+
+
+function validation()
+{
+
+
+
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+
+
+
+
+var c=document.reg.email.value;
+var d=document.reg.mobile.value;
+var e=document.reg.addr.value;
+var f1=document.reg.pwd.value.length;
+var g=document.reg.cpwd.value.length;
+
+/*
+if(( form.gender[0].checked == false ) && ( form.gender[1].checked == false ))
+{
+
+document.getElementById("gender1").innerHTML="select male or female";
+return false;
+
+}
+*/
+
+if(f1.length<6){  
+  document.getElementById("pwd").innerHTML="Password must be at least 6 characters long.";  
+  return false;  
+  }  
+
+if(g.length<6){  
+  document.getElementById("cpwd").innerHTML="Password must be at least 6 characters long.";  
+  return false;  
+  }  
+
+  
+/*if(c.match(mailformat))
+{
+document.getElementById("email").innerHTML="Enter ur Email";
+return false;
+}
+if(e.match(alpha))
+{
+document.getElementById("addr").innerHTML="Enter ur Address";
+return false;
+
+}
+*/
+else
+{  
+  return true;  
+ }  
+
+}
+
+
+</script>
+</head>
+
+<body>
+<form method="post" name="reg" action="reg-display.html" onsubmit="return validation()">
+<div class="main-lcontainer">
+
+				<div class="ltitle">
+				  Registration <span id="reg1" class="error"></span>
+				  				  <div class="luname">Name:</div>
+								  <div class="linput">
+								  		<input name="uname1" type="text" value=""  id="uanme1" placeholder="Enter name" size="30" />
+										<br/>
+										<span id="uname1" class="error"></span>
+								  </div>
+								 			
+								<!--  <div class="luname">Gender:</div>
+								  <div class="linput">
+								 
+								  		<input type="radio" value="male"  name="gender" />Male 
+										<input type="radio" value="female"  name="gender"/> Female <span id="gender1"  class="error"></span>
+								  </div>-->
+								  <div class="luname">Email:</div>
+ 	  							  <div class="linput"> 
+								  		<input name="email" type="text" value="" size="30" placeholder="Enter Email"/>
+										<br/>
+										<span class="error" id="email"></span>
+ 	  							  </div>
+								  <div class="luname">Mobile:</div>
+								  <div class="linput">
+								  		<input name="mobile" type="text"  placeholder="Enter Mobile no" value="" size="30"/>
+										<br/>
+										<span   class="error" id="mobile"></span>
+										</div>
+										
+								  <div class="luname"> Address: </div>
+								  <div class="linput">
+								  		<textarea rows="3" cols="30" name="addr" id="addr"></textarea>
+										<br/>
+										<span  class="error" id="addr"></span>
+								  </div>
+								   <div class="luname">	Password:</div>
+									<div class="linput"><input type="password" value=""  id="pwd" size="30" name="pwd" placeholder="Enter Password"/>
+									<br/>
+									<span id="pwd" class="error" ></span>
+									</div>
+									
+								 <div class="luname">Conform	Password:</div>
+									<div class="linput"><input type="password" value=""  size="30" name="cpwd" placeholder="Enter conform Password"/>
+									<br/>
+									<span id="cpwd" class="error" ></span>
+									</div>
+								
+								  <div class="lbtn">
+									  <input  type="submit" value="submit" name="submit" class="lbtn1"/>
+									  <input type="button" value="clear" name="clear" class="lbtn1"/>
+							      </div>
+  </div>
+</div>
+</form>
+</body>
+</html>
+

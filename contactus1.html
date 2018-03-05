@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Blue Developer Directory</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style type="text/css">
+td
+{
+border-style:none;
+}
+</style>
+
+</head>
+
+<body>
+<div id="container">
+<header>
+<h1><span class="blue-text">Blue </span>Developer Directory</h1>
+<h2>Find a Developer <span class="white-text">Now</span></h2>
+</header>
+<nav id="menu">
+<ul>
+<li><a href="Bluedev.html">Home</a></li>
+<li><a href="bdev.html">Browse Developer</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="contactus1.html">Contact Us</a></li>
+</ul>
+</nav>
+<nav id="leftmenu">
+<h3>Links</h3>
+<ul>
+<li><a href="sample.html">SEO</a></li>
+<li><a href="sample.html">PHP</a></li>
+<li><a href="sample.html">JQUERY</a></li>
+<li><a href="sample.html">JAVA</a></li>
+<li><a href="sample.html">ASP</a></li>
+<li><a href="sample.html">.NET</a></li>
+<li><a href="sample.html">ANGULAR JS</a></li>
+<li><a href="sample.html">NODE JS</a></li>
+</ul>
+
+
+</nav>
+<section>
+<h1>Blue Developers Directory</h1>
+<div style="padding:5px 5px 5px 10px;"><!--main conten start-->
+ <h3>Contact us</h3>
+ <p>Please use contact us form to  contact a website.</p>
+ <form method="post" action="sample.php">
+ <p>
+ <label for="name">Full Name: </label>
+ <input type="text" name="name" value="" />
+ </p>
+ <p>
+ <label for="email">Email Address: </label>
+ <input type="email" name="email" value="" />
+ </p>
+ 
+ <p>
+ <label for="phone">Phone Address: </label>
+ <input type="tel" name="phone" value="" />
+ </p>
+ <p>
+ <label for="call">Best time to call:</label>
+ <input type="radio" name="call" value="morning" checked="checked" />Morning
+ <input type="radio" name="call" value="afternoon" />Afternoon
+ <input type="radio" name="call" value="evening" />Evening
+ </p>
+ <p>
+ <label for="location">Location:</label>
+ <input list="location" >
+ <datalist id="location">
+ <option value="new york">
+  <option value="ca">
+   <option value="boston">
+ </datalist>
+ </p>
+ <fieldset>
+ <legend>About ur project</legend>
+ <p>
+
+<script type="text/javascript">
+function updatetextinput(val)
+{
+document.getElementById('inputtext').value=val;
+}
+</script> 
+ <label for="budget">Budget</label>
+ <input type="range" name="range" min="500" max="2000"  onchange="updatetextinput(this.value)"/>
+  <input type="text" name="inputtext" id="inputtext" value="" />
+ </p>
+  <p>
+ <label for="services">Service needed <br/>(Check all the needed)</label>
+ <table style="margin-left:0px;">
+ <tr>
+ <td> <input type="checkbox"  name="services" value="Php" />Php</td>
+ <td><input type="checkbox"  name="services" value="Asp" />Asp</td>
+ </tr>
+  <tr>
+ <td> <input type="checkbox"  name="services" value="Java" />Java</td>
+ <td><input type="checkbox"  name="services" value=".Net" />.Net</td>
+ </tr>
+   <tr>
+ <td> <input type="checkbox"  name="services" value="C" />C</td>
+ <td><input type="checkbox"  name="services" value="C++" />C++</td>
+ </tr>
+
+</table>
+<p>
+
+<label for="website">curren t website</label>
+<input type="url" name="website" value=""/>
+
+</p>
+<p>
+
+<label for="date">Start Date</label>
+<input type="date" name="date" value=""/>
+
+</p>
+<p>
+
+<label for="number">Number of pages</label>
+<input type="number" name="pages" value=""/>
+
+</p>
+<p>
+
+<label for="color">Main website color</label>
+<input type="color" name="color" value=""/>
+
+</p>
+
+
+ </p>
+ </fieldset>
+ <p>
+ <input type="submit" value="submit" name="submit" />
+ </p>
+ 
+ </form>
+</div><!-- main content end-->
+		</section>
+		<div style="clear:both;"></div>
+		<footer>All rights are reserved.</footer>
+</div>
+</body>
+</html>

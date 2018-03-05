@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Shtml</title>
+<style type="text/css">
+.main-container
+{
+width:100%;
+height:auto;
+background-color:blue;
+border:30px solid navy;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:white;
+/*text-align:center;*/
+
+}
+.header
+{
+font-size:30px;
+font-weight:bold;
+text-align:center;
+height:100px;
+margin-top:50px;
+}
+.nav
+{
+list-style-type:none;
+padding:0px;
+margin:0px;
+background-color:#666666;
+text-align:center;
+
+}
+.nav li
+{
+display:inline;
+}
+.nav a
+{
+display:block-inline;
+color:white;
+font-size:20px;
+padding:20px;
+
+}
+.nav a:hover
+{
+background-color:#993300;
+}
+
+/*begin slider img*/
+* {box-sizing:border-box}
+
+.mySlides {display:none}
+body {font-family: Verdana,sans-serif;margin:0}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*end slider img*/
+.sside
+{
+width:200px;
+}
+.sside a
+{
+list-style-type:none;
+background-color:#666666;
+padding:12px;
+display:block;
+color:white;
+text-decoration:none;
+}
+.sside a:hover
+{
+background-color:#993333;
+}
+.sside active
+{
+background-color:#990000;
+}
+.scontent
+{
+	margin-top:-210px;
+	margin-left:210px;
+	overflow:hidden;
+	text-align:justify;
+	padding: 0em;
+}
+
+.sbox
+{
+float:left;
+width:300px;
+height:300px;
+border:1px solid black;
+border-radius:1px;
+padding:5px;
+
+ margin: 65px -50px 65px 180px;
+}
+}
+.stitle
+{
+text-align:center;
+color:#993300;
+}
+.simg
+{
+text-align:center;
+width:50px;
+height:50px;
+}
+.sdes
+{
+text-align:justify;
+}
+.sclear
+{
+clear:left;
+
+}
+.nav2
+{
+list-style-type:none;
+padding:0;
+margin:0;
+background-color:#666666;
+text-align:center;
+
+}
+.nav2 li
+{
+display:inline;
+}
+.nav2 a
+{
+display:block-inline;
+color:white;
+
+}
+.nav2 a:hover
+{
+background-color:#993300;
+}
+
+#content{
+	width:50%;
+	margin-left: 330px;
+	background: blue;
+	color:white;
+	padding: 20px;
+	border: 1px solid black;
+	text-align:center;
+	border-radius:13px;
+	clear: both;
+}
+
+.sright
+{
+text-align:center;
+background-color:#000000;
+color:#FFFFFF;
+}
+
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+</style>
+</head>
+<body>
+<div class="main-container">
+			<div class="header">
+				Html Dummies
+			</div>
+			<div class="nav">
+				<ul>
+				<li><a href="sample.htm">Home</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="sample.htm">Profile</a></li>
+				<li><a href="sample.htm">Sproduct</a></li>
+				<li><a href="sample.htm">About Us</a></li>
+				<li><a href="sample.htm">Contact Us</a></li>
+				</ul>
+			</div>	
+			<!--js img scroller-->
+			
+							<div class="slideshow-container">
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">1 / 3</div>
+							  <img src="img/img_nature_wide.jpg" style="width:100%">
+							  <div class="text">Caption Text</div>
+							</div>
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">2 / 3</div>
+							  <img src="img/img_fjords_wide.jpg" style="width:100%">
+							  <div class="text">Caption Two</div>
+							</div>
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">3 / 3</div>
+							  <img src="img/img_mountains_wide.jpg" style="width:100%">
+							  <div class="text">Caption Three</div>
+							</div>
+							
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							
+							</div>
+							<br>
+							
+							<div style="text-align:center">
+							  <span class="dot" onclick="currentSlide(1)"></span> 
+							  <span class="dot" onclick="currentSlide(2)"></span> 
+							  <span class="dot" onclick="currentSlide(3)"></span> 
+							</div>
+<!--end js img slider-->
+			<!--main content with sidebar-->
+
+			<div class="sside">
+					
+					<a href="sample.htm">Home</a>
+				<a href="login.html">Login</a>
+					<a href="sample.htm">Profile</a>
+					<a href="sample.htm">Sproduct</a>
+					<a href="sample.htm">About Us</a>
+					<a href="sample.htm">Contact Us</a>
+					
+				
+			</div>
+			
+			<div class="scontent">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+						
+			</div>
+			<div class="sclear">
+			
+			</div>
+			<div class="sbox">
+						<span class="stitle">
+						Dummies<br/></span>
+						<span class="simg">
+						<img src="img/img1.jpg" width="50" height="50"/><br/>
+						</span>
+						<span class="sdes">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 						</span>
+			</div>
+			
+			
+			
+			<div class="sbox">
+						<span class="stitle">
+						Dummies<br/></span>
+						<span class="simg">
+						<img src="img/img1.jpg" width="50" height="50"/>
+						</span>
+						<span class="sdes">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+						</span>
+			</div>
+			
+			
+			<div class="sbox">
+						<span class="stitle">
+						Dummies<br/></span>
+						<span class="simg">
+						<img src="img/img1.jpg" width="50" height="50"/><br/>
+						</span>
+						<span class="sdes">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+						</span>
+			</div>
+			<div class="sclear">
+			
+			</div>
+		<div id="content">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+		</div>
+			
+			<div class="sfooter">
+				<div class="nav2">
+							<ul>
+							<li><a href="sample.htm">Home</a></li>
+							<li><a href="sample.htm">Profile</a></li>
+							<li><a href="sample.htm">Sproduct</a></li>
+							<li><a href="sample.htm">About Us</a></li>
+							<li><a href="sample.htm">Contact Us</a></li>
+							</ul>
+				</div>
+				<div>					<a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
+				<div class="sright">
+					<span class="srght">All rights are reserved@2017</span>
+
+				</div>
+				
+				
+			</div>
+			
+			
+</div>
+		
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<script>
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+
+</script>
+</body>
+</html>

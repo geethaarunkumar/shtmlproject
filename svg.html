@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>-->
+
+<canvas  id="canvas1"   width="400" height="300" style="background:#999999;margin:10px;padding:10px;background:#ffffff;border:1px solid #0000000;"></canvas>
+<br/>
+
+
+<script>
+//var c = document.getElementById("myCanvas");
+//var ctx = c.getContext("2d");
+//ctx.font = "30px Arial";
+
+//ctx.fillStyle="Blue";
+//ctx.strokeStyle="Black";
+
+//ctx.fillText("Hello World",10,50);
+//ctx.strokeText("Hello World",20,60);
+
+var canvas1=document.getElementById("canvas1");
+var ctex1=canvas1.getContext("2d");
+alert('call var');
+ctex1.font="35pt Arial";
+alert(ctex1);
+ctex1.fillStyle="Blue";
+ctex1.strokeStyle="Black";
+alert('call var');
+
+ctex1.fillText("Welcome to js",45,150);
+ctex1.strokeText("Welcome to js",45,150);
+
+</script>
+
+</body>
+</html>

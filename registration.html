@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login</title>
+<style type="text/css">
+.main-lcontainer
+{
+	background-color:#0066FF;
+	color:#333333;
+	text-align:center;
+	width:98%;
+	height:auto;
+	display:block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	border:20px solid blue;
+	border-radius:30px;
+	padding:5px;
+	margin: 0px;
+	
+}
+.ltitle
+{
+width:50%;
+text-align:center;
+font-size:3em;
+background-color:lightblue;
+border:1px soild navy;
+border-radius:150px;
+padding:5px;
+margin-left:350px;
+}
+.luname 
+{
+font-size:20px;
+text-align:center;
+}
+.linput
+{
+font-size:20px;
+text-align:center;
+}
+.lbtn
+{
+font-size:20px;
+text-align:center;
+
+}
+.lbtn1
+{
+width:50px;
+height:30px; font-weight:bold;
+}
+
+.error
+{
+font-size:13px;
+color:red;
+}
+</style>
+
+<script type="text/javascript">
+
+
+		
+function validation()
+{
+/*
+var letters = /^[A-Za-z]+$/;  
+var alpha = /^[0-9a-zA-Z]+$/;  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+
+
+
+var a=document.reg.uname1.value;
+var m=document.reg.male.value;
+var f=document.reg.female.value;
+var c=document.reg.email.value;*/
+var d=document.reg.mobile.value;
+/*var e=document.reg.addr.value;
+var f1=document.reg.pwd.value.length;
+var g=document.reg.cpwd.value.length;*/
+
+if (isNaN(d))
+{  
+  document.getElementById("mobile").innerHTML="Enter Numeric value only";  
+  return false;  
+}
+/*if(a.match(letters))
+{
+document.getElementById("uname1").innerHTML="Enter ur name";
+return false;
+}
+if(c.match(mailformat))
+{
+document.getElementById("email").innerHTML="Enter ur Email";
+return false;
+}
+if(e.match(alpha))
+{
+document.getElementById("addr").innerHTML="Enter ur Address";
+return false;
+
+}
+if(f == 0 || f>=0 || f <8)
+{
+document.getElementById("pwd").innerHTML="Enter 8 letter password";
+return false;
+}
+
+if(g == 0 || g>=0 || g <8)
+{
+document.getElementById("cpwd").innerHTML="Enter 8 letter cpassword";
+return false;
+}
+if(m.checked==false && f.checked==false )
+{
+
+document.getElementById("gender").innerHTML="select male or female";
+return false;
+
+}
+*/
+/*   
+else
+{  
+  return true;  
+ }*/  
+
+}
+
+
+</script>
+</head>
+
+<body>
+<form method="post" name="reg" action="reg-display.html" onsubmit="return validation()">
+<div class="main-lcontainer">
+
+				<div class="ltitle">
+				  Registration
+				  				  <div class="luname">Name:</div>
+								  <div class="linput">
+								  		<input name="uname1" type="text" value=""  id="uanme1" placeholder="Enter name" size="30" />
+										<br/>
+										<span id="uname1" class="error"></span>
+								  </div>
+								 			
+								  <div class="luname">Gender:</div>
+								  <div class="linput">
+								 
+								  		<input type="radio" value="0"  name="male"  />Male 
+										<input type="radio" value="1"  name="female"/> Female <span id="gender"  class="error"></span>
+								  </div>
+								  <div class="luname">Email:</div>
+ 	  							  <div class="linput"> 
+								  		<input name="email" type="text" value="" size="30" placeholder="Enter Email"/>
+										<br/>
+										<span class="error" id="email"></span>
+ 	  							  </div>
+								  <div class="luname">Mobile:</div>
+								  <div class="linput">
+								  		<input name="mobile" type="text"  placeholder="Enter Mobile no" value="" size="30"/>
+										<br/>
+										<span   class="error" id="mobile"></span>
+										</div>
+										
+								  <div class="luname"> Address: </div>
+								  <div class="linput">
+								  		<textarea rows="3" cols="30" name="addr" id="addr"></textarea>
+										<br/>
+										<span  class="error" id="addr"></span>
+								  </div>
+								   <div class="luname">	Password:</div>
+									<div class="linput"><input type="password" value=""  id="pwd" size="30" name="pwd" placeholder="Enter Password"/>
+									<br/>
+									<span id="pwd" class="error" ></span>
+									</div>
+									
+								 <div class="luname">Conform	Password:</div>
+									<div class="linput"><input type="password" value=""  size="30" name="cpwd" placeholder="Enter conform Password"/>
+									<br/>
+									<span id="cpwd" class="error" ></span>
+									</div>
+								
+								  <div class="lbtn">
+									  <input  type="submit" value="submit" name="submit" class="lbtn1"/>
+									  <input type="button" value="clear" name="clear" class="lbtn1"/>
+							      </div>
+  </div>
+</div>
+</form>
+</body>
+</html>
+

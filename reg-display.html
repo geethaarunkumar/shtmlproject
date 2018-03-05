@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login</title>
+<style type="text/css">
+.main-lcontainer
+{
+	background-color:#0066FF;
+	color:#333333;
+	text-align:center;
+	width:50%;
+	height:auto;
+	display:block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	border:20px solid blue;
+	border-radius:30px;
+	padding:5px;
+	margin:0px;
+}
+.ltitle
+{
+width:50%;
+text-align:center;
+font-size:3em;
+background-color:lightblue;
+border:1px soild navy;
+border-radius:150px;
+margin-left:350px;
+padding:5px;
+}
+
+.luname 
+{
+font-size:20px;
+text-align:center;
+}
+.linput
+{
+font-size:20px;
+text-align:center;
+}
+.lbtn
+{
+font-size:20px;
+text-align:center;
+
+}
+.lbtn1
+{
+width:50px;
+height:30px; font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+<div class="main-lcontainer">
+				<div class="ltitle">Result
+				
+									  <div class="luname">User Name : </div>
+									<div class="linput"> <?php echo $uname;?></div>
+									 <div class="luname">	Password:</div>
+									<div class="linput"><?php echo $pwd;?></div>
+									 <div class="luname">Gender:</div>
+								  <div class="linput"><?php echo $gender;?> </div>
+								  <div class="luname">Email:</div>
+ 	  							  <div class="linput"> <?php echo $email;?></div>
+								  <div class="luname">Mobile:</div>
+								  <div class="linput"><?php echo $mob; ?></div>
+								  <div class="luname">Address:</div>
+								  <div class="linput">	<?php echo $address;?>  </div>
+				</div>
+				</div>
+</body>
+</html>

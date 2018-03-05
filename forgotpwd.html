@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Login</title>
+<style type="text/css">
+.main-lcontainer
+{
+	background-color:#0066FF;
+	color:#333333;
+	text-align:center;
+	width:98%;
+	height:auto;
+	display:block;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	border:20px solid blue;
+	border-radius:30px;
+	padding:5px;
+	margin-top: 0px;
+	margin-right: 100px;
+	margin-bottom: 0px;
+	margin-left: 300px;
+}
+.ltitle
+{
+width:70%;
+text-align:center;
+font-size:3em;
+background-color:lightblue;
+border:1px soild navy;
+border-radius:150px;
+padding:5px;
+margin-left:350px;
+}
+
+.luname 
+{
+font-size:20px;
+text-align:center;
+}
+.linput
+{
+font-size:20px;
+text-align:center;
+
+}
+.linput1
+{width:50%
+}
+.lbtn
+{
+font-size:20px;
+text-align:center;
+
+}
+.lbtn1
+{
+width:50px;
+height:30px; font-weight:bold;
+}
+</style>
+</head>
+<script>
+var a=document.getElementByName('uname').value;
+alert(a);
+if(!a)
+{
+alert('empty');
+}
+
+
+</script>
+<body>
+<form method="post" action="sampleclass.php">
+<div class="main-lcontainer">
+				<div class="ltitle">
+				 Forgot Password
+				
+									<div class="luname"> Email:</div>
+												<div class="linput"> 
+				  <input type="text" value="" name="uname" placeholder="Enter Email" class="linput1"  maxlength="20"/></div>
+											
+																					
+												<div class="lbtn"><input  type="submit" value="submit" name="submit" class="lbtn1"/>
+													<input type="button" value="clear" name="clear" class="lbtn1"/>
+												
+												</div>
+				</div>
+</div>
+</form>
+</body>
+</html>
